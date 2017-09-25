@@ -1,5 +1,6 @@
 import * as d3 from 'd3'
 import React from 'react'
+import PropTypes from 'prop-types'
 
 import Grid from './Grid'
 import Axis from './Axis'
@@ -155,10 +156,10 @@ class Sparkline extends React.Component {
 }
 
 Sparkline.propTypes = {
-  chartId: React.PropTypes.string.isRequired,
-  width: React.PropTypes.number.isRequired,
-  height: React.PropTypes.number.isRequired,
-  data: React.PropTypes.array.isRequired
+  chartId: PropTypes.string.isRequired,
+  width: PropTypes.number.isRequired,
+  height: PropTypes.number.isRequired,
+  data: PropTypes.array.isRequired
 }
 
 export default Sparkline

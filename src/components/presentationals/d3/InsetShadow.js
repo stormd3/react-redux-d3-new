@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
 const InsetShadow = ({ chartId, stdDeviation, floodColor, floodOpacity }) => {
   return (
@@ -16,10 +17,10 @@ const InsetShadow = ({ chartId, stdDeviation, floodColor, floodOpacity }) => {
 }
 
 InsetShadow.propTypes = {
-  chartId: React.PropTypes.string.isRequired,
-  stdDeviation: React.PropTypes.string.isRequired,
-  floodColor: React.PropTypes.string.isRequired,
-  floodOpacity: React.PropTypes.string.isRequired,
+  chartId: PropTypes.string.isRequired,
+  stdDeviation: PropTypes.string.isRequired,
+  floodColor: PropTypes.string.isRequired,
+  floodOpacity: PropTypes.string.isRequired,
 }
 
 export default InsetShadow

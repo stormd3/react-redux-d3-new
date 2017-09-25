@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
 import { Nav, NavItem } from 'react-bootstrap'
 import { browserHistory } from 'react-router'
@@ -12,7 +13,7 @@ const LeftBar = ({ pathname }) => (
 )
 
 LeftBar.propTypes = {
-  pathname: React.PropTypes.string.isRequired
+  pathname: PropTypes.string.isRequired
 }
 
 export default LeftBar

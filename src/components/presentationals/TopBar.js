@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import { Navbar, Nav, NavItem } from 'react-bootstrap'
 
 const TopBar = ({ handleRefresh }) => (
@@ -20,7 +21,7 @@ const TopBar = ({ handleRefresh }) => (
 )
 
 TopBar.propTypes = {
-  handleRefresh: React.PropTypes.func.isRequired
+  handleRefresh: PropTypes.func.isRequired
 }
 
 export default TopBar

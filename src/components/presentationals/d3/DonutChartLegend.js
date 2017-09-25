@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
 const DonutChartLegend = ({ width, height, pie, data }) => {
   // Responsive: don't show legend if too small
@@ -28,10 +29,10 @@ const DonutChartLegend = ({ width, height, pie, data }) => {
 }
 
 DonutChartLegend.propTypes = {
-  height: React.PropTypes.number.isRequired,
-  width: React.PropTypes.number.isRequired,
-  data: React.PropTypes.array.isRequired,
-  pie: React.PropTypes.func.isRequired
+  height: PropTypes.number.isRequired,
+  width: PropTypes.number.isRequired,
+  data: PropTypes.array.isRequired,
+  pie: PropTypes.func.isRequired
 }
 
 export default DonutChartLegend

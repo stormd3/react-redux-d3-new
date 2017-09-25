@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import { connect } from 'react-redux'
 
 import { generateRandomData } from '../../actionCreators/data'
@@ -29,10 +30,10 @@ class Home extends React.Component {
 }
 
 Home.propTypes = {
-  data: React.PropTypes.object.isRequired,
-  routing: React.PropTypes.object.isRequired,
-  handleRefresh: React.PropTypes.func.isRequired,
-  children: React.PropTypes.node
+  data: PropTypes.object.isRequired,
+  routing: PropTypes.object.isRequired,
+  handleRefresh: PropTypes.func.isRequired,
+  children: PropTypes.node
 }
 
 export default connect(

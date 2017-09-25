@@ -1,5 +1,6 @@
 import * as d3 from 'd3'
 import React from 'react'
+import PropTypes from 'prop-types'
 
 import InsetShadow from './InsetShadow'
 
@@ -49,7 +50,7 @@ class ProgressChart extends React.Component {
   }
 
   render() {
-    const { chartId, width, height, data } = this .props
+    const { chartId, width, height, data } = this.props
 
     const styleText = { fontSize: '40px', fontColor: '#99d5e6' }
     const style1 = { filter: 'url(#inset-shadow1)' }
@@ -82,10 +83,10 @@ class ProgressChart extends React.Component {
 }
 
 ProgressChart.propTypes = {
-  chartId: React.PropTypes.string.isRequired,
-  width: React.PropTypes.number.isRequired,
-  height: React.PropTypes.number.isRequired,
-  data: React.PropTypes.array.isRequired
+  chartId: PropTypes.string.isRequired,
+  width: PropTypes.number.isRequired,
+  height: PropTypes.number.isRequired,
+  data: PropTypes.array.isRequired
 }
 
 export default ProgressChart

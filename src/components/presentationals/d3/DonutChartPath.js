@@ -1,5 +1,6 @@
 import * as d3 from 'd3'
 import React from 'react'
+import PropTypes from 'prop-types'
 
 class DonutChartPath extends React.Component {
   constructor() {
@@ -45,10 +46,10 @@ class DonutChartPath extends React.Component {
 }
 
 DonutChartPath.propTypes = {
-  width: React.PropTypes.number.isRequired,
-  height: React.PropTypes.number.isRequired,
-  data: React.PropTypes.array.isRequired,
-  pie: React.PropTypes.func.isRequired
+  width: PropTypes.number.isRequired,
+  height: PropTypes.number.isRequired,
+  data: PropTypes.array.isRequired,
+  pie: PropTypes.func.isRequired
 }
 
 export default DonutChartPath

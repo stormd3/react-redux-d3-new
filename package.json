@@ -1,7 +1,7 @@
 {
-  "name": "my-app",
+  "name": "aspen",
   "version": "0.1.0",
-  "private": true,
+  "license": "MIT",
   "dependencies": {
     "react-scripts": "1.0.13",
     "d3": "^4.10.2",

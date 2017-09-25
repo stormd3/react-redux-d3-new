@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import * as d3 from 'd3'
 
 const Dots = ({ data, x, y, showTooltip, hideTooltip }) => {
@@ -33,11 +34,11 @@ const Dots = ({ data, x, y, showTooltip, hideTooltip }) => {
 }
 
 Dots.propTypes = {
-  data: React.PropTypes.array.isRequired,
-  showTooltip: React.PropTypes.func.isRequired,
-  hideTooltip: React.PropTypes.func.isRequired,
-  x: React.PropTypes.func.isRequired,
-  y: React.PropTypes.func.isRequired
+  data: PropTypes.array.isRequired,
+  showTooltip: PropTypes.func.isRequired,
+  hideTooltip: PropTypes.func.isRequired,
+  x: PropTypes.func.isRequired,
+  y: PropTypes.func.isRequired
 }
 
 export default Dots

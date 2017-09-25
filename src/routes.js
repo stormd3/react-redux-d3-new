@@ -1,5 +1,6 @@
 import { Route, Router, IndexRoute } from 'react-router'
 import React from 'react'
+import PropTypes from 'prop-types'
 
 import Home from './components/containers/Home'
 import DashboardZero from './components/containers/DashboardZero'
@@ -33,7 +34,7 @@ class Routes extends React.Component {
 }
 
 Routes.propTypes = {
-  history: React.PropTypes.object.isRequired
+  history: PropTypes.object.isRequired
 }
 
 export default Routes

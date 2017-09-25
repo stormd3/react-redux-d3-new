@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import { connect } from 'react-redux'
 
 import DonutChart from '../presentationals/d3/DonutChart'
@@ -100,7 +101,7 @@ class DashboardZero extends React.Component {
 }
 
 DashboardZero.propTypes = {
-  data: React.PropTypes.object.isRequired
+  data: PropTypes.object.isRequired
 }
 
 export default connect(state => ({

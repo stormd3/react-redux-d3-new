@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
 const Tooltip = ({ tooltip }) => {
   if (!tooltip.display) return null
@@ -41,7 +42,7 @@ const Tooltip = ({ tooltip }) => {
 }
 
 Tooltip.propTypes = {
-  tooltip: React.PropTypes.object.isRequired
+  tooltip: PropTypes.object.isRequired
 }
 
 export default Tooltip

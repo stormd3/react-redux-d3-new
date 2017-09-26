@@ -18,7 +18,7 @@ class Home extends React.Component {
         </div>
         <div className="left-bar">
           <div className="fixed-left-bar">
-            <LeftBar pathname={routing.locationBeforeTransitions.pathname}/>
+            <LeftBar/>
           </div>
         </div>
         <div className="right-content">
@@ -31,15 +31,13 @@ class Home extends React.Component {
 
 Home.propTypes = {
   data: PropTypes.object.isRequired,
-  routing: PropTypes.object.isRequired,
   handleRefresh: PropTypes.func.isRequired,
   children: PropTypes.node
 }
 
 export default connect(
   state => ({
-    data: state.data,
-    routing: state.routing
+    data: state.data
   }),
   dispatch => ({
     handleRefresh: () => dispatch(generateRandomData())

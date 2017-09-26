@@ -1,14 +1,31 @@
-//import { browserHistory } from 'react-router'
-//import { syncHistoryWithStore } from 'react-router-redux'
-import ReactDOM from 'react-dom'
+
 import React from 'react'
-
+import { render } from 'react-dom'
+import { createStore, applyMiddleware } from 'redux'
+import { Provider } from 'react-redux'
+import { createLogger } from 'redux-logger'
+import thunk from 'redux-thunk'
+//import reducer from './reducers'
+//import App from './containers/App'
 import Root from './Root'
-import configureStore from './store/configureStore'
+import rootReducer from './reducers/rootReducer'
 
-// const store = configureStore(browserHistory)
-const store = configureStore()
 
-//const history = syncHistoryWithStore(browserHistory, store)
+import Routes from './routes'
 
-ReactDOM.render(<Root store={store} />, document.getElementById('app'))
+const middleware = [ thunk ];
+if (process.env.NODE_ENV !== 'production') {
+  middleware.push(createLogger());
+}
+
+const store = createStore(
+  rootReducer,
+  applyMiddleware(...middleware)
+)
+
+render(
+  <Provider store={store}>
+    <Routes />
+  </Provider>,
+  document.getElementById('app')
+)

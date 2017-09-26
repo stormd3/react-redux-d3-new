@@ -28,7 +28,7 @@ const store = createStore(
 
 render(
   <Provider store={store}>
-    <LeftBarSimple />
+    <LeftBar />
   </Provider>,
   document.getElementById('app')
 )

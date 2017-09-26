@@ -22,7 +22,7 @@ const LeftBar = () => (
 
       <hr/>
 
-      <Route exact path="/" component={Home}/>
+      <Route exact path="/" component={DashboardZero}/>
       <Route path="/dashboard-one" component={DashboardOne}/>
       <Route path="/dashboard-two" component={DashboardTwo}/>
     </div>

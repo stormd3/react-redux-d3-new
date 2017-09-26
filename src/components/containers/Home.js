@@ -9,7 +9,7 @@ import TopBar from '../presentationals/TopBar'
 
 class Home extends React.Component {
   render() {
-    const { children, routing, handleRefresh } = this.props
+    const { children, handleRefresh } = this.props
 
     return (
       <div>

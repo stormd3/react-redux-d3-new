@@ -10,7 +10,10 @@ import thunk from 'redux-thunk'
 import Root from './Root'
 import rootReducer from './reducers/rootReducer'
 
-
+import Home from './components/containers/Home'
+import DashboardOne from './components/containers/DashboardOne'
+import LeftBar from './components/presentationals/LeftBar'
+import LeftBarSimple from './components/presentationals/LeftBarSimple'
 import Routes from './routes'
 
 const middleware = [ thunk ];
@@ -25,7 +28,7 @@ const store = createStore(
 
 render(
   <Provider store={store}>
-    <Routes />
+    <LeftBarSimple />
   </Provider>,
   document.getElementById('app')
 )

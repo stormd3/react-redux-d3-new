@@ -11,22 +11,20 @@ import {
   Link
 } from 'react-router-dom'
 
-const LeftBar = () => (
+const LeftBarSimple = () => (
   <Router>
     <div>
       <ul>
-        <li><Link to="/">Home</Link></li>
-        <li><Link to="/dashboard-one">Dashboard One</Link></li>
+        <li><Link to="/">Dashboard One</Link></li>
         <li><Link to="/dashboard-two">Dashboard Two</Link></li>
       </ul>
 
       <hr/>
 
-      <Route exact path="/" component={Home}/>
-      <Route path="/dashboard-one" component={DashboardOne}/>
+      <Route exact path="/" component={DashboardOne}/>
       <Route path="/dashboard-two" component={DashboardTwo}/>
     </div>
   </Router>
 )
 
-export default LeftBar
+export default LeftBarSimple

@@ -16,10 +16,8 @@ class Home extends React.Component {
         <div className="top-bar">
           <TopBar handleRefresh={handleRefresh}/>
         </div>
-        <div className="left-bar">
-          <div className="fixed-left-bar">
+        <div className="right-content">
             <LeftBar/>
-          </div>
         </div>
       </div>
     )

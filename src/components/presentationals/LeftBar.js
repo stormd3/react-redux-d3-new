@@ -1,6 +1,5 @@
 import React from 'react'
 
-import Home from '../../components/containers/Home'
 import DashboardZero from '../../components/containers/DashboardZero'
 import DashboardOne from '../../components/containers/DashboardOne'
 import DashboardTwo from '../../components/containers/DashboardTwo'

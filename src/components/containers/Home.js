@@ -9,7 +9,7 @@ import TopBar from '../presentationals/TopBar'
 
 class Home extends React.Component {
   render() {
-    const { children, handleRefresh } = this.props
+    const { handleRefresh } = this.props
 
     return (
       <div>
@@ -21,9 +21,6 @@ class Home extends React.Component {
             <LeftBar/>
           </div>
         </div>
-        <div className="right-content">
-          {children}
-        </div>
       </div>
     )
   }
@@ -32,7 +29,6 @@ class Home extends React.Component {
 Home.propTypes = {
   data: PropTypes.object.isRequired,
   handleRefresh: PropTypes.func.isRequired,
-  children: PropTypes.node
 }
 
 export default connect(

@@ -1,4 +1,4 @@
-react and d3 functionality implemented using
+react, redux and d3 functionality implemented using
 [create-react-app](https://github.com/facebookincubator/create-react-app)
 
 This is a fork of [react-redux-d3](https://github.com/lucmerceron/React-Redux-D3).
